@@ -1,0 +1,26 @@
+services:
+  frontend:
+    build:
+      context: ./public
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"    
+    depends_on:
+      - db
+      
+  backend: 
+    build:
+      context: ./server
+      dockerfile: Dockerfile.node
+    ports: 
+      - "5000:5000"   
+    depends_on:
+      - db
+  db:
+    volumes:
+      - myapp:/data/db
+    image: mongo:latest
+    ports:
+      - "27017:27017"  
+volumes:
+    myapp:

@@ -1,7 +1,9 @@
 # Steps For Docker Compose
 
-# Build The Docker Compose - docker-compose build 
+# Build The Docker Compose 
 
-# Run The Docker Compose - 
+<code>docker-compose build</code>
+
+# Run The Docker Compose 
 
 <code>docker-compose up</code>

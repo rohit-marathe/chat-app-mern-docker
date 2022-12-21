@@ -1,8 +1,5 @@
-# Steps to Start the App
+# Steps For Docker Compose
 
-## Install the Public Dependencies
-## Install the Server Dependencies
-## In the Server Directory there's a .env file. Change the value of mongodb inside the file. Set the value as your mongodb connection url.
-## Now start the server by yarn start
-## Now start the react by yarn start
-## And the chat application would be running successfully by now.
+# Build The Docker Compose - docker-compose build 
+
+# Run The Docker Compose - docker-compose up
